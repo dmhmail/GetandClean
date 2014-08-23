@@ -1,14 +1,20 @@
+# Set a directory path if data is not in the working directory.
+filepath <- "Training/Getting and Cleaning Data/Final Project/"
+if (!file.exists("Training")){
+        filepath <- ""
+}
+
 #Create a table with the features which will become column names
-data_features <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt",header = FALSE, sep=" ")
+data_features <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/features.txt", sep=""),header = FALSE, sep=" ")
 #Create a table with the activites which will be used to decode the activity names.
-data_activities <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt",header = FALSE, sep=" ")
+data_activities <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/activity_labels.txt", sep=""),header = FALSE, sep=" ")
 
 #Create a table of the subject in the test group
-subj_test <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt",header = FALSE, colClasses = character())
+subj_test <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt", sep=""),header = FALSE, colClasses = character())
 #Create a table of the activities the subject in the test group performed
-y_test <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt",header = FALSE, colClasses = numeric())
+y_test <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt", sep=""),header = FALSE, colClasses = numeric())
 #Create a table of the provided observation summaries of the test group
-x_test <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt",header = FALSE, colClasses = numeric())
+x_test <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt", sep=""),header = FALSE, colClasses = numeric())
 #Set the column names for the observations to the test group
 colnames(x_test) <- data_features[ , 2]
 #add the subject number to the data frame for the test group
@@ -19,11 +25,11 @@ x_test$activity_cd <- y_test[, 1]
 x_test$activity = data_activities[x_test$activity_cd, 2]
 
 #Create a table of the subject in the training group
-subj_train <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt",header = FALSE, colClasses = character())
+subj_train <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt", sep=""),header = FALSE, colClasses = character())
 #Create a table of the activities the subject in the training group performed
-y_train <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt",header = FALSE, colClasses = numeric())
+y_train <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt", sep=""),header = FALSE, colClasses = numeric())
 #Create a table of the provided observation summaries of the training group
-x_train <- read.table("Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt",header = FALSE, colClasses = numeric())
+x_train <- read.table(paste(filepath,"getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt", sep=""),header = FALSE, colClasses = numeric())
 #Set the column names for the observations to the training group
 colnames(x_train) <- data_features[ , 2]
 #add the subject number to the data frame for the training group
@@ -37,7 +43,7 @@ x_train$activity = data_activities[x_train$activity_cd, 2]
 x_train <- rbind(x_train, x_test)
 
 #Unload raw file here
-write.table(x_train, file = "Training/Getting and Cleaning Data/Final Project/combinedData.csv", append = FALSE, quote = TRUE, sep = ",",
+write.table(x_train, file = paste(filepath,"combinedData.txt", sep=""), append = FALSE, quote = TRUE, sep = ",",
             eol = "\n", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"))
 
@@ -73,6 +79,6 @@ actData <- dcast(actMelt, activity + subject  ~ variable,mean)
 tidyData = actData
 
 #write Tidy data set
-write.table(tidyData, file = "Training/Getting and Cleaning Data/Final Project/tidy.csv", append = FALSE, quote = TRUE, sep = ",",
+write.table(tidyData, file = paste(filepath,"tidy.txt", sep=""), append = FALSE, quote = TRUE, sep = ",",
             eol = "\n", na = "NA", dec = ".", row.names = FALSE,
             col.names = TRUE, qmethod = c("escape", "double"))

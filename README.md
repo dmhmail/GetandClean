@@ -20,12 +20,12 @@ About the script and the tidy dataset
 The script run_analysis.R was created to combine the testing and training data together with the activities and subjects to create a tidy dataset. Prerequisites for this script:
 
     the UCI HAR Dataset must be downloaded and extracted from the zip file provided and..
-    the UCI HAR Dataset must be available in a directory called "Training/Getting and Cleaning Data/Final Project/getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset" which is created from the default working directory.
+    the UCI HAR Dataset must be available in the working directory and unzipped into "getdata_projectfiles_UCI HAR Dataset/UCI HAR Dataset".
 
 The testing and training data were combined and given the labels, activities, and subjects. The data was then written into a combined raw file for creating the tidy dataset. 
 When reducing the number of columns for the tidy dataset, only the fields with mean ("mean()") or standard deviation ("std()") were kept.
 
-The final steps of the script will create a tidy data set containing the means of the mean and standard deviation fields grouped per activity and test subject as worded in the requirements. This tidy dataset will be written to a comma delimited file named tidy.csv, which can also be found in this repository.
+The final steps of the script will create a tidy data set containing the means of the mean and standard deviation fields grouped per activity and test subject as worded in the requirements. This tidy dataset will be written to a comma delimited file named tidy.txt, which can also be found in this repository.
 About the Code Book
 
 The CodeBook.md file explains the transformations performed and the resulting data and variables.
