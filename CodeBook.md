@@ -1,5 +1,5 @@
 CodeBook for the tidy dataset
------------------------------
+=============================
 Data source
 -----------
 
@@ -21,73 +21,73 @@ In addition, the punctuation fields and dashes were removed and the field names 
 The following fields names were kept in the tidy dataset:
 
 Field Name | Field Reference
-+--------- | +--------------
-activity          | The activity performed by the subject (participant)
-subject           | The subject (participant)
-tbodyaccmeanx            | Technical variable defined on website.
-tbodyaccmeany            | Technical variable defined on website.
-tbodyaccmeanz            | Technical variable defined on website.
-tbodyaccstdx             | Technical variable defined on website.
-tbodyaccstdy            | Technical variable defined on website.
-tbodyaccstdz             | Technical variable defined on website.
-tgravityaccmeanx         | Technical variable defined on website.
-tgravityaccmeany         | Technical variable defined on website.
-tgravityaccmeanz         | Technical variable defined on website.
-tgravityaccstdx          | Technical variable defined on website.
-tgravityaccstdy          | Technical variable defined on website.
-tgravityaccstdz         | Technical variable defined on website.
-tbodyaccjerkmeanx        | Technical variable defined on website.
-tbodyaccjerkmeany        | Technical variable defined on website.
-tbodyaccjerkmeanz        | Technical variable defined on website.
-tbodyaccjerkstdx         | Technical variable defined on website.
-tbodyaccjerkstdy         | Technical variable defined on website.
-tbodyaccjerkstdz         | Technical variable defined on website.
-tbodygyromeanx          | Technical variable defined on website.
-tbodygyromeany           | Technical variable defined on website.
-tbodygyromeanz           | Technical variable defined on website.
-tbodygyrostdx            | Technical variable defined on website.
-tbodygyrostdy            | Technical variable defined on website.
-tbodygyrostdz            | Technical variable defined on website.
-tbodygyrojerkmeanx       | Technical variable defined on website.
-tbodygyrojerkmeany      | Technical variable defined on website.
-tbodygyrojerkmeanz       | Technical variable defined on website.
-tbodygyrojerkstdx        | Technical variable defined on website.
-tbodygyrojerkstdy        | Technical variable defined on website.
-tbodygyrojerkstdz        | Technical variable defined on website.
-tbodyaccmagmean          | Technical variable defined on website.
-tbodyaccmagstd           | Technical variable defined on website.
-tgravityaccmagmean      | Technical variable defined on website.
-tgravityaccmagstd        | Technical variable defined on website.
-tbodyaccjerkmagmean      | Technical variable defined on website.
-tbodyaccjerkmagstd       | Technical variable defined on website.
-tbodygyromagmean         | Technical variable defined on website.
-tbodygyromagstd          | Technical variable defined on website.
-tbodygyrojerkmagmean     | Technical variable defined on website.
-tbodygyrojerkmagstd     | Technical variable defined on website.
-fbodyaccmeanx            | Technical variable defined on website.
-fbodyaccmeany            | Technical variable defined on website.
-fbodyaccmeanz            | Technical variable defined on website.
-fbodyaccstdx             | Technical variable defined on website.
-fbodyaccstdy             | Technical variable defined on website.
-fbodyaccstdz             | Technical variable defined on website.
-fbodyaccjerkmeanx       | Technical variable defined on website.
-fbodyaccjerkmeany        | Technical variable defined on website.
-fbodyaccjerkmeanz        | Technical variable defined on website.
-fbodyaccjerkstdx         | Technical variable defined on website.
-fbodyaccjerkstdy         | Technical variable defined on website.
-fbodyaccjerkstdz         | Technical variable defined on website.
-fbodygyromeanx           | Technical variable defined on website.
-fbodygyromeany          | Technical variable defined on website.
-fbodygyromeanz           | Technical variable defined on website.
-fbodygyrostdx            | Technical variable defined on website.
-fbodygyrostdy            | Technical variable defined on website.
+---------- | ---------------
+activity | The activity performed by the subject (participant)
+subject | The subject (participant)
+tbodyaccmeanx | Technical variable defined on website.
+tbodyaccmeany | Technical variable defined on website.
+tbodyaccmeanz | Technical variable defined on website.
+tbodyaccstdx | Technical variable defined on website.
+tbodyaccstdy | Technical variable defined on website.
+tbodyaccstdz | Technical variable defined on website.
+tgravityaccmeanx | Technical variable defined on website.
+tgravityaccmeany | Technical variable defined on website.
+tgravityaccmeanz | Technical variable defined on website.
+tgravityaccstdx | Technical variable defined on website.
+tgravityaccstdy | Technical variable defined on website.
+tgravityaccstdz | Technical variable defined on website.
+tbodyaccjerkmeanx | Technical variable defined on website.
+tbodyaccjerkmeany | Technical variable defined on website.
+tbodyaccjerkmeanz | Technical variable defined on website.
+tbodyaccjerkstdx | Technical variable defined on website.
+tbodyaccjerkstdy | Technical variable defined on website.
+tbodyaccjerkstdz | Technical variable defined on website.
+tbodygyromeanx | Technical variable defined on website.
+tbodygyromeany | Technical variable defined on website.
+tbodygyromeanz | Technical variable defined on website.
+tbodygyrostdx | Technical variable defined on website.
+tbodygyrostdy | Technical variable defined on website.
+tbodygyrostdz | Technical variable defined on website.
+tbodygyrojerkmeanx | Technical variable defined on website.
+tbodygyrojerkmeany | Technical variable defined on website.
+tbodygyrojerkmeanz | Technical variable defined on website.
+tbodygyrojerkstdx | Technical variable defined on website.
+tbodygyrojerkstdy | Technical variable defined on website.
+tbodygyrojerkstdz | Technical variable defined on website.
+tbodyaccmagmean | Technical variable defined on website.
+tbodyaccmagstd | Technical variable defined on website.
+tgravityaccmagmean | Technical variable defined on website.
+tgravityaccmagstd | Technical variable defined on website.
+tbodyaccjerkmagmean | Technical variable defined on website.
+tbodyaccjerkmagstd | Technical variable defined on website.
+tbodygyromagmean | Technical variable defined on website.
+tbodygyromagstd | Technical variable defined on website.
+tbodygyrojerkmagmean | Technical variable defined on website.
+tbodygyrojerkmagstd | Technical variable defined on website.
+fbodyaccmeanx | Technical variable defined on website.
+fbodyaccmeany | Technical variable defined on website.
+fbodyaccmeanz | Technical variable defined on website.
+fbodyaccstdx | Technical variable defined on website.
+fbodyaccstdy | Technical variable defined on website.
+fbodyaccstdz | Technical variable defined on website.
+fbodyaccjerkmeanx | Technical variable defined on website.
+fbodyaccjerkmeany | Technical variable defined on website.
+fbodyaccjerkmeanz | Technical variable defined on website.
+fbodyaccjerkstdx | Technical variable defined on website.
+fbodyaccjerkstdy | Technical variable defined on website.
+fbodyaccjerkstdz | Technical variable defined on website.
+fbodygyromeanx | Technical variable defined on website.
+fbodygyromeany | Technical variable defined on website.
+fbodygyromeanz | Technical variable defined on website.
+fbodygyrostdx | Technical variable defined on website.
+fbodygyrostdy | Technical variable defined on website.
 fbodygyrostdz | Technical variable defined on website.
 fbodyaccmagmean | Technical variable defined on website.
-fbodyaccmagstd   | Technical variable defined on website.
+fbodyaccmagstd | Technical variable defined on website.
 fbodybodyaccjerkmagmean | Technical variable defined on website.
 fbodybodyaccjerkmagstd | Technical variable defined on website.
 fbodybodygyromagmean | Technical variable defined on website.
-fbodybodygyromagstd  | Technical variable defined on website.
+fbodybodygyromagstd | Technical variable defined on website.
 fbodybodygyrojerkmagmean | Technical variable defined on website.
 fbodybodygyrojerkmagstd | Technical variable defined on website.
 
