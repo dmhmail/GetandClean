@@ -11,7 +11,7 @@ The corresponding feature label names were provided in the features.txt file wit
 This file was aligned respective to the rows in the measurement data to identify each row with the subject that the data was gathered from for the measurement. The next source files used were the y_test.txt and y_train.txt files.
 These files were too aligned respective to the rows in the measurement data to identify the activity that the subject was performing at the time the data was gathered. 
 The last file used (activity_labels.txt) was a cross reference file that identified the activity codes to the actual activity performed (ex "WALKING", "STANDING", etc). The key value for these activities was used to join the activity description. to each row based on matching the key value for the activity with the activity key value provided in the y_test.txt and y_train.txt files.
-A comma delimited file named combinedData.csv was written once all of these files were combined and before anydata fields were removed or summarized for the tidy dataset.
+A comma delimited file named combinedData.csv was written once all of these files were combined and before any data fields were removed or summarized for the tidy dataset.
 
 
 About the script and the tidy dataset
